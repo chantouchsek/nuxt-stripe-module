@@ -6,7 +6,7 @@
 </p>
 
 <p align="center">
-  <a href="https://www.npmjs.com/package/@chantouchsek/nuxt-stripe"><img src="https://img.shields.io/npm/v/@chantouchsek/nuxt-stripe?style=flat-square" alt="@chantouchsek/nuxt-stripe"></a> <a href="https://www.npmjs.com/package/@chantouchsek/nuxt-stripe"><img src="https://img.shields.io/npm/dt/@chantouchsek/nuxt-stripe?style=flat-square" alt="@chantouchsek/nuxt-stripe"></a> <a href="#"><img src="https://img.shields.io/github/license/chantouchsek/@chantouchsek/nuxt-stripe?style=flat-square" alt="@chantouchsek/nuxt-stripe"></a>
+  <a href="https://www.npmjs.com/package/@chantouchsek/nuxt-stripe"><img src="https://img.shields.io/npm/v/@chantouchsek/nuxt-stripe?style=flat-square" alt="@chantouchsek/nuxt-stripe"></a> <a href="https://www.npmjs.com/package/@chantouchsek/nuxt-stripe"><img src="https://img.shields.io/npm/dt/@chantouchsek/nuxt-stripe?style=flat-square" alt="@chantouchsek/nuxt-stripe"></a> <a href="#"><img src="https://img.shields.io/github/license/chantouchsek/nuxt-stripe-module?style=flat-square" alt="@chantouchsek/nuxt-stripe"></a>
 </p>
 
 ## Table of contents
