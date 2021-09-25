@@ -1,6 +1,6 @@
 {
   "name": "nuxt-stripe-js",
-  "version": "0.0.0",
+  "version": "0.0.1",
   "description": "NuxtJS module for Stripe.js",
   "repository": "chantouchsek/nuxt-stripe-module",
   "license": "MIT",
@@ -23,7 +23,7 @@
     "clean": "rimraf dist",
     "transpile": "tsc",
     "build": "yarn clean && yarn transpile",
-    "release": "standard-version && git push --follow-tags origin master && yarn publish",
+    "release": "standard-version && git push --follow-tags origin main && yarn publish",
     "prepublish": "yarn build",
     "lint": "eslint --ext \".ts,.js\" --ignore-path .gitignore ."
   },
