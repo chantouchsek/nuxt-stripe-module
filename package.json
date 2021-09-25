@@ -1,0 +1,53 @@
+{
+  "name": "nuxt-stripe-js",
+  "version": "0.0.0",
+  "description": "NuxtJS module for Stripe.js",
+  "repository": "chantouchsek/nuxt-stripe-module",
+  "license": "MIT",
+  "author": {
+    "name": "Chantouch Sek",
+    "email": "chantouchsek.cs83@gmail.com",
+    "url": "https://chantouch.me"
+  },
+  "contributors": [
+    {
+      "name": "Chantouch Sek",
+      "email": "chantouchsek.cs83@gmail.com",
+      "url": "https://chantouch.me"
+    }
+  ],
+  "files": ["dist"],
+  "main": "dist/module.js",
+  "types": "dist/module.d.ts",
+  "scripts": {
+    "clean": "rimraf dist",
+    "transpile": "tsc",
+    "build": "yarn clean && yarn transpile",
+    "release": "standard-version && git push --follow-tags origin master && yarn publish",
+    "prepublish": "yarn build",
+    "lint": "eslint --ext \".ts,.js\" --ignore-path .gitignore ."
+  },
+  "dependencies": {
+    "@stripe/stripe-js": "^1.18.0"
+  },
+  "devDependencies": {
+    "@nuxt/types": "^2.15.8",
+    "@nuxt/typescript-build": "^2.1.0",
+    "@nuxtjs/i18n": "^7.0.3",
+    "@typescript-eslint/eslint-plugin": "^4.31.2",
+    "@typescript-eslint/parser": "^4.31.2",
+    "eslint": "^7.32.0",
+    "eslint-config-standard": "^16.0.3",
+    "eslint-plugin-import": "^2.24.2",
+    "eslint-plugin-node": "^11.1.0",
+    "eslint-plugin-promise": "^5.1.0",
+    "eslint-plugin-vue": "^7.18.0",
+    "nuxt": "^2.15.8",
+    "rimraf": "^3.0.2",
+    "standard-version": "^9.3.1",
+    "typescript": "^4.4.3"
+  },
+  "publishConfig": {
+    "access": "public"
+  }
+}
