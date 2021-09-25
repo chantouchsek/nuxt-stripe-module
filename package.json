@@ -1,5 +1,5 @@
 {
-  "name": "nuxt-stripe-js",
+  "name": "@chantouchsek/nuxt-stripe",
   "version": "0.0.1",
   "description": "NuxtJS module for Stripe.js",
   "repository": "chantouchsek/nuxt-stripe-module",
@@ -46,8 +46,5 @@
     "rimraf": "^3.0.2",
     "standard-version": "^9.3.1",
     "typescript": "^4.4.3"
-  },
-  "publishConfig": {
-    "access": "public"
   }
 }

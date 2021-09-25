@@ -1,12 +1,12 @@
 <h1 align="center">
-  nuxt-stripe-js
+  @chantouchsek/nuxt-stripe
 </h1>
 <p align="center">
   NuxtJS module for Stripe.js
 </p>
 
 <p align="center">
-  <a href="https://www.npmjs.com/package/nuxt-stripe-js"><img src="https://img.shields.io/npm/v/nuxt-stripe-js?style=flat-square" alt="nuxt-stripe-js"></a> <a href="https://www.npmjs.com/package/nuxt-stripe-js"><img src="https://img.shields.io/npm/dt/nuxt-stripe-js?style=flat-square" alt="nuxt-stripe-js"></a> <a href="#"><img src="https://img.shields.io/github/license/dogchef-be/nuxt-stripe-js?style=flat-square" alt="nuxt-stripe-js"></a>
+  <a href="https://www.npmjs.com/package/@chantouchsek/nuxt-stripe"><img src="https://img.shields.io/npm/v/@chantouchsek/nuxt-stripe?style=flat-square" alt="@chantouchsek/nuxt-stripe"></a> <a href="https://www.npmjs.com/package/@chantouchsek/nuxt-stripe"><img src="https://img.shields.io/npm/dt/@chantouchsek/nuxt-stripe?style=flat-square" alt="@chantouchsek/nuxt-stripe"></a> <a href="#"><img src="https://img.shields.io/github/license/dogchef-be/@chantouchsek/nuxt-stripe?style=flat-square" alt="@chantouchsek/nuxt-stripe"></a>
 </p>
 
 ## Table of contents
@@ -26,21 +26,21 @@
 
 ## Setup
 
-1. Add `nuxt-stripe-js` dependency to your project:
+1. Add `@chantouchsek/nuxt-stripe` dependency to your project:
 
 ```bash
-npm install nuxt-stripe-js
+npm install @chantouchsek/nuxt-stripe
 ```
 
-2. Add `nuxt-stripe-js` module and configuration to `nuxt.config.js`:
+2. Add `@chantouchsek/nuxt-stripe` module and configuration to `nuxt.config.js`:
 
 ```js
 export default {
     modules: [
         // simple usage
-        'nuxt-stripe-js',
+        '@chantouchsek/nuxt-stripe',
         // with options
-        ["nuxt-stripe-js", {
+        ["@chantouchsek/nuxt-stripe", {
             publishableKey: 'YOUR_STRIPE_PUBLISHABLE_KEY',
             version: '2020-08-27',
             i18n: true,
@@ -63,14 +63,14 @@ export default {
 }
 ```
 
-3. (Optional) TypeScript support. Add `nuxt-stripe-js` to the `types` section of `tsconfig.json`:
+3. (Optional) TypeScript support. Add `@chantouchsek/nuxt-stripe` to the `types` section of `tsconfig.json`:
 
 ```json
 {
   "compilerOptions": {
     "types": [
       "@nuxt/types",
-      "nuxt-stripe-js"
+      "@chantouchsek/nuxt-stripe"
     ]
   }
 }
@@ -81,7 +81,7 @@ export default {
 
 ```ts
 import { Context, Inject } from '@nuxt/types/app'
-import { getStripeInstance } from 'nuxt-stripe-js'
+import { getStripeInstance } from '@chantouchsek/nuxt-stripe'
 import { CheckoutLocale, StripeElementLocale } from '@stripe/stripe-js'
 
 export default function (ctx: Context, inject: Inject) {
