@@ -80,9 +80,9 @@ export default {
    in `plugins/i18n.{js,ts}`
 
 ```ts
-import {Context, Inject} from '@nuxt/types/app'
-import {getStripeInstance} from 'nuxt-stripe-js'
-import {CheckoutLocale, StripeElementLocale} from '@stripe/stripe-js'
+import { Context, Inject } from '@nuxt/types/app'
+import { getStripeInstance } from 'nuxt-stripe-js'
+import { CheckoutLocale, StripeElementLocale } from '@stripe/stripe-js'
 
 export default function (ctx: Context, inject: Inject) {
     const {app} = ctx
@@ -155,4 +155,4 @@ Stripe: [JavaScript SDK documentation & reference](https://stripe.com/docs/js)
 
 ## License
 
-See the LICENSE file for license rights and limitations (MIT).
+See the [License](LICENSE) file for license rights and limitations (MIT).
