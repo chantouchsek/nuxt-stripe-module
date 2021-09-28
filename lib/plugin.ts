@@ -4,6 +4,11 @@ import type { Stripe, StripeElementLocale, CheckoutLocale } from '@stripe/stripe
 import type { Context } from '@nuxt/types/app'
 import { StripeOption } from '~/lib/module'
 
+export interface StripeOptions {
+  locale: StripeElementLocale | CheckoutLocale
+  reload?: boolean
+}
+
 let stripe: Stripe | null
 
 function _isTrue (val: string) {
@@ -15,8 +20,10 @@ function delayNextRetry (retryCount: number): Promise<void> {
   return new Promise(resolve => setTimeout(resolve, delay + delay * 0.2 * Math.random()))
 }
 
-export async function getStripeInstance ({ app, $config }: Context, locale?: StripeElementLocale | CheckoutLocale): Promise<Stripe | null> {
-  if (!stripe) {
+export async function getStripeInstance ({ app, $config }: Context, options?: StripeOptions): Promise<Stripe | null> {
+  let locale = options?.locale
+  const reload = options?.reload
+  if (reload || !stripe) {
     if (!locale && _isTrue('<%= options.i18n %>')) {
       locale = app.i18n.locale as StripeElementLocale | CheckoutLocale
     }
@@ -49,9 +56,7 @@ export async function getStripeInstance ({ app, $config }: Context, locale?: Str
     } while (!stripe && retries < 3)
 
     if (!stripe) {
-      throw new Error(
-        `nuxt-stripe-js: Failed to load Stripe.js after ${retries} retries, ${msg}`
-      )
+      throw new Error(`nuxt-stripe-js: Failed to load Stripe.js after ${retries} retries, ${msg}`)
     }
   }
 
@@ -63,9 +68,11 @@ const stripePlugin: Plugin = async (ctx, inject) => {
   if (ctx.app.i18n) {
     locale = ctx.app.i18n.locale as StripeElementLocale | CheckoutLocale
   }
-  const stripeInstance = await getStripeInstance(ctx, locale)
+  const stripeInstance = await getStripeInstance(ctx, { locale })
   inject('stripe', stripeInstance)
   ctx.app.stripe = stripeInstance
 }
+
+export { loadStripe }
 
 export default stripePlugin

@@ -16,7 +16,9 @@
       "url": "https://chantouch.me"
     }
   ],
-  "files": ["dist"],
+  "files": [
+    "dist"
+  ],
   "main": "dist/module.js",
   "types": "dist/module.d.ts",
   "scripts": {
@@ -31,6 +33,7 @@
     "@stripe/stripe-js": "^1.18.0"
   },
   "devDependencies": {
+    "@chantouchsek/nuxt-stripe": "^0.0.1",
     "@nuxt/types": "^2.15.8",
     "@nuxt/typescript-build": "^2.1.0",
     "@nuxtjs/i18n": "^7.0.3",

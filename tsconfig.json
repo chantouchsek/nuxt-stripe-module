@@ -15,7 +15,7 @@
       "~/*": ["./*"]
     },
     "outDir": "dist",
-    "types": ["@nuxt/types", "@nuxtjs/i18n"]
+    "types": ["@nuxt/types", "@nuxtjs/i18n", "@chantouchsek/nuxt-stripe"]
   },
   "exclude": ["node_modules"],
   "include": ["lib"]

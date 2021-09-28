@@ -1,5 +1,5 @@
 import { resolve } from 'path'
-import { getStripeInstance } from './plugin'
+import { getStripeInstance, loadStripe } from './plugin'
 
 export interface StripeOption {
   i18n?: boolean
@@ -8,7 +8,7 @@ export interface StripeOption {
   publishableKey?: string
 }
 
-export { getStripeInstance }
+export { getStripeInstance, loadStripe }
 
 declare module 'vue/types/vue' {
   // eslint-disable-next-line no-unused-vars

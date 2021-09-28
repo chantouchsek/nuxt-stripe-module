@@ -910,6 +910,13 @@
     "@babel/helper-validator-identifier" "^7.14.9"
     to-fast-properties "^2.0.0"
 
+"@chantouchsek/nuxt-stripe@^0.0.1":
+  version "0.0.1"
+  resolved "https://registry.yarnpkg.com/@chantouchsek/nuxt-stripe/-/nuxt-stripe-0.0.1.tgz#b6520c5a93adfded8a3d04068116701cadd1acb9"
+  integrity sha512-hIe1dthZOb/P45GIRPC1XvK8KYVZxNxWdkow0+pTDJUiB8mBzloNOmAPwD/gEfd6T0J1gOVAVOKwgvQUfZa2ng==
+  dependencies:
+    "@stripe/stripe-js" "^1.18.0"
+
 "@csstools/convert-colors@^1.4.0":
   version "1.4.0"
   resolved "https://registry.npmjs.org/@csstools/convert-colors/-/convert-colors-1.4.0.tgz"

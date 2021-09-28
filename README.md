@@ -105,6 +105,16 @@ export default {
 }
 ```
 
+5. Another Option for change locale
+
+```ts
+export default {
+   plugins: [
+      '@chantouchsek/nuxt-stripe/i18n',
+   ]
+}
+```
+
 ## Options
 
 ### `publishableKey`
