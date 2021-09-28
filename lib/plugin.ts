@@ -21,14 +21,13 @@ function delayNextRetry (retryCount: number): Promise<void> {
 }
 
 export async function getStripeInstance ({ app, $config }: Context, options?: StripeOptions): Promise<Stripe | null> {
-  let locale = options?.locale
   const reload = options?.reload
   if (reload) {
     stripe = null
   }
   if (!stripe) {
-    if (!locale && _isTrue('<%= options.i18n %>')) {
-      locale = app.i18n.locale as StripeElementLocale | CheckoutLocale
+    if (!options?.locale && _isTrue('<%= options.i18n %>')) {
+      options!.locale = app.i18n.locale as StripeElementLocale | CheckoutLocale
     }
     let publishableKey = '<%= options.publishableKey %>'
     let apiVersion = '<%= options.apiVersion %>'
@@ -48,7 +47,7 @@ export async function getStripeInstance ({ app, $config }: Context, options?: St
 
     do {
       try {
-        stripe = await loadStripe(publishableKey, { locale, apiVersion })
+        stripe = await loadStripe(publishableKey, { locale: options!.locale, apiVersion })
       } catch (e: any) {
         stripe = null
         retries++
