@@ -2,6 +2,13 @@
 
 All notable changes to this project will be documented in this file. See [standard-version](https://github.com/conventional-changelog/standard-version) for commit guidelines.
 
+### [0.0.5](https://github.com/chantouchsek/nuxt-stripe-module/compare/v0.0.4...v0.0.5) (2021-09-28)
+
+
+### Bug Fixes
+
+* :fire: fix bugs ([38a7747](https://github.com/chantouchsek/nuxt-stripe-module/commit/38a7747037e9c716242dca5bb6de15c13660e137))
+
 ### [0.0.4](https://github.com/chantouchsek/nuxt-stripe-module/compare/v0.0.3...v0.0.4) (2021-09-28)
 
 
