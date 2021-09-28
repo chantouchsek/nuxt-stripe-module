@@ -21,8 +21,7 @@ function delayNextRetry (retryCount: number): Promise<void> {
 }
 
 export async function getStripeInstance ({ app, $config }: Context, options?: StripeOptions): Promise<Stripe | null> {
-  const reload = options?.reload
-  if (reload) {
+  if (options!.reload) {
     stripe = null
   }
   if (!stripe) {
