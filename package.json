@@ -1,6 +1,6 @@
 {
   "name": "@chantouchsek/nuxt-stripe",
-  "version": "0.0.2",
+  "version": "0.0.3",
   "description": "NuxtJS module for Stripe.js",
   "repository": "chantouchsek/nuxt-stripe-module",
   "license": "MIT",
