@@ -25,7 +25,7 @@ export async function getStripeInstance ({ app, $config }: Context, options?: St
     stripe = null
   }
   if (!stripe) {
-    if (!options?.locale && _isTrue('<%= options.i18n %>')) {
+    if (!options!.locale && _isTrue('<%= options.i18n %>')) {
       options!.locale = app.i18n.locale as StripeElementLocale | CheckoutLocale
     }
     let publishableKey = '<%= options.publishableKey %>'
