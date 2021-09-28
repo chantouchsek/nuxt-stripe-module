@@ -70,6 +70,7 @@ const stripePlugin: Plugin = async (ctx, inject) => {
   }
   const stripeInstance = await getStripeInstance(ctx, { locale })
   inject('stripe', stripeInstance)
+  ctx.app.stripe = stripeInstance
 }
 
 export { loadStripe }
