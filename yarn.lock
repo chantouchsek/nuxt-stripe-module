@@ -1404,9 +1404,9 @@
   integrity sha512-88p7+M0QGxKpmnkfXjS4V26AnoC/eiqZutE8GLdaI5X12NY75bXSdTY9NkmYb2Xyk1O+MmkuO6Frmsj84V6I8Q==
 
 "@stripe/stripe-js@^1.18.0":
-  version "1.19.1"
-  resolved "https://registry.yarnpkg.com/@stripe/stripe-js/-/stripe-js-1.19.1.tgz#51017bb1c6e12f0e74747534667e42e77b2c9978"
-  integrity sha512-gvaQ51FXHHKMypXMlSPZbpb7e5671oqySqEfU2MviAQCsikV/+vnvPPxOged4RvNwNM7v4ocsKadQwqIwPhgrQ==
+  version "1.28.0"
+  resolved "https://registry.yarnpkg.com/@stripe/stripe-js/-/stripe-js-1.28.0.tgz#eb14add69a6226a41ef6ccacc5dbcfa5b0e6880c"
+  integrity sha512-KWcsWqgdaetLAxb02AjFrx8B8KXEe2A2NW2x96xzTwESfqIKeocLqiJivtuQWd1FvyQ/Cvmvyx5DVDB/RgprvA==
 
 "@types/anymatch@*":
   version "3.0.0"
